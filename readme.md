@@ -9,7 +9,7 @@
 
 ## Make an own theme of it.
 
-1. Try the script out, and than go the file you want to edit. It is like PHP, just look for the <head> tag in the document. Avery PHP String after that you can Copy and Paste it weherever you want. 
+1. Try the script out, and than go the file you want to edit. It is like PHP, just look for the <head> tag in the document. Every PHP String after that you can Copy and Paste it weherever you want. 
 
 ### Licences:
 	HTML:
