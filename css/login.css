@@ -1,0 +1,347 @@
+body,
+.signin {
+  background: url(https://i.imgur.com/shQImkS.jpg);
+  background-size: cover;
+  background-color: #d3d3d3;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.login {
+  position: relative;
+  height: 405px;
+  width: 405px;
+  margin: auto;
+  padding: 60px 60px;
+  background: url(http://mikeyoungweb.com/img/bg4.jpg) no-repeat   center center #505050;*/   
+  background-size: cover;
+  box-shadow: 0px 30px 60px -5px #000;
+  border-radius: 50px;
+}
+.register {
+  position: relative;
+  height: 940px;
+  width: 405px;
+  margin: auto;
+  padding: 60px 60px;
+  background: url(http://mikeyoungweb.com/img/bg4.jpg) no-repeat   center center #505050;*/   
+  background-size: cover;
+  box-shadow: 0px 30px 60px -5px #000;
+  border-radius: 50px;
+}
+
+.registerwsteam {
+  position: relative;
+  height: 750px;
+  width: 405px;
+  margin: auto;
+  padding: 60px 60px;
+  background: url(http://mikeyoungweb.com/img/bg4.jpg) no-repeat   center center #505050;*/   
+  background-size: cover;
+  box-shadow: 0px 30px 60px -5px #000;
+  border-radius: 50px;
+}
+
+.registerwgoogle {
+  position: relative;
+  height: 750px;
+  width: 405px;
+  margin: auto;
+  padding: 60px 60px;
+  background: url(http://mikeyoungweb.com/img/bg4.jpg) no-repeat   center center #505050;*/   
+  background-size: cover;
+  box-shadow: 0px 30px 60px -5px #000;
+  border-radius: 50px;
+}
+
+.respw1 {
+  position: relative;
+  height: 260px;
+  width: 405px;
+  margin: auto;
+  padding: 60px 60px;
+  background: url(http://mikeyoungweb.com/img/bg4.jpg) no-repeat   center center #505050;*/   
+  background-size: cover;
+  box-shadow: 0px 30px 60px -5px #000;
+  border-radius: 50px;
+}
+
+.respw2 {
+  position: relative;
+  height: 280px;
+  width: 405px;
+  margin: auto;
+  padding: 60px 60px;
+  background: url(http://mikeyoungweb.com/img/bg4.jpg) no-repeat   center center #505050;*/   
+  background-size: cover;
+  box-shadow: 0px 30px 60px -5px #000;
+  border-radius: 50px;
+}
+
+.respw3 {
+  position: relative;
+  height: 380px;
+  width: 405px;
+  margin: auto;
+  padding: 60px 60px;
+  background: url(http://mikeyoungweb.com/img/bg4.jpg) no-repeat   center center #505050;*/   
+  background-size: cover;
+  box-shadow: 0px 30px 60px -5px #000;
+  border-radius: 50px;
+}
+
+form {
+  padding-top: 30px;
+}
+
+.active {
+  border-bottom: 2px solid #1161ed;
+}
+.active:hover {
+	cursor: pointer;
+}
+
+.nonactive {
+  color: rgba(255, 255, 255, 0.2);
+}
+.nonactive:hover {
+	cursor: pointer;
+}
+
+h2 {
+  padding-left: 12px;
+  font-size: 22px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  letter-spacing: 2px;
+  display: inline-block;
+  font-weight: 100;
+}
+
+h2:first-child {
+  padding-left: 0px;
+}
+
+span {
+  text-transform: uppercase;
+  font-size: 12px;
+  opacity: 0.4; 
+  display: inline-block;
+  position: relative;
+  top: -65px;
+  transition: all 0.5s ease-in-out;
+}
+
+.text {
+  border: none;
+  width: 89%;
+  padding: 10px 20px;
+  display: block;
+  height: 15px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0);
+  overflow: hidden;
+  margin-top: 15px;
+  transition: all 0.5s ease-in-out;
+}
+
+.text:focus {
+  outline: 0;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0);
+}
+
+.text:focus + span {
+  opacity: 0.6;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="password"] {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+}
+
+
+.signinbtn {
+  background-color: #d3d3d3;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+
+.iutext {
+	-webkit-appearance: none;
+}
+
+
+
+input {
+  display: inline-block;
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+h2,
+span,
+.custom-checkbox {
+  margin-left: 20px;
+}
+
+.custom-checkbox {
+  -webkit-appearance: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 8px;
+  border-radius: 2px;
+  display: inline-block;
+  position: relative;
+  top: 6px;
+  transition: background-color .5s, content .5s, font-size .5s, ease-in-out;
+   -moz-transition: background-color 1s ease-in-out;
+   -webkit-transition: background-color 1s ease-in-out;
+}
+
+.custom-checkbox:checked {
+  background-color: rgba(17, 97, 237, 1);
+}
+
+.custom-checkbox:checked:after {
+  content: '\2714';
+  font-size: 10px;
+  position: absolute;
+  top: 1px;
+  left: 4px;
+  color: #fff;
+}
+
+.custom-checkbox:focus {
+  outline: none;
+}
+
+#register_form h1 {
+  text-align: center;
+}
+#register_form {
+  width: 37%;
+  margin: 100px auto;
+  padding-bottom: 30px;
+  border: 1px solid #918274;
+  border-radius: 5px;
+  background: white;
+}
+#register_form input {
+  width: 80%;
+  height: 35px;
+  margin: 5px 10%;
+  font-size: 1.1em;
+  padding: 4px;
+  font-size: .9em;
+}
+#reg_btn {
+  height: 35px;
+  width: 80%;
+  margin: 5px 10%;
+  color: white;
+  background: #3B5998;
+  border: none;
+  border-radius: 5px;
+}
+/*Styling for errors on form*/
+.form_error span {
+  width: 80%;
+  height: 35px;
+  margin: 3px 10%;
+  font-size: 1.1em;
+  color: #D83D5A;
+}
+.form_error input {
+  border: 1px solid #D83D5A;
+}
+
+/*Styling in case no errors on form*/
+.form_success span {
+  width: 80%;
+  height: 35px;
+  margin: 3px 10%;
+  font-size: 1.1em;
+  color: green;
+}
+.form_success input {
+  border: 1px solid green;
+}
+#error_msg {
+  color: red;
+  text-align: center;
+  margin: 10px auto;
+}
+
+label {
+  display: inline-block;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+
+.cusreg{
+	padding-top: 20px;
+}
+
+.signinbtn {
+  background-color: #1161ed;
+  color: #FFF;
+  width: 100%;
+  padding: 10px 20px;
+  display: block;
+  height: 39px;
+  border-radius: 20px;
+  margin-top: 30px;
+  transition: all 0.5s ease-in-out;
+  border: none;
+  text-transform: uppercase;
+}
+
+.signinbtn:hover {
+  background: #4082f5;
+  box-shadow: 0px 4px 35px -5px #4082f5;
+  cursor: pointer;
+}
+
+.signinbtn:focus {
+  outline: none;
+}
+
+
+.hrregister {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  top: 20px;
+  position: relative;
+}
+.hrlogin {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  top: 20px;
+  position: relative;
+}
+
+.fp {
+  text-align: center;
+  display: block;
+  top: 40px;
+  position: relative;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.textfooter {
+  text-align: center;
+  display: block;
+  position: relative;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.2);
+  height: calc(100% - 40px);
+}
