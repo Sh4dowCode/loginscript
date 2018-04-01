@@ -23,8 +23,8 @@ if (!isset($_SESSION['id'])) {
 	  $_SESSION['id'] = $id;
 	  $_SESSION['name'] = $name;
 	  if ($_POST['kmsibox'] == 'true') {
-		$salt = '123';
-		$secsalt = '456';
+		$salt = $firstsalt;
+		$secsalt = $secondsalt;
 		$username = $_POST['username'];
 		if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
 			$ip = $_SERVER['HTTP_CLIENT_IP'];

@@ -17,8 +17,8 @@ if (isset($_SESSION['id'])) {
 		if (mysqli_num_rows($kmsiresults) > 0) {
 			$kmsirow = mysqli_fetch_assoc($kmsiresults);
 			
-			$salt = '123';
-			$secsalt = '456';
+			$salt = $firstsalt;
+			$secsalt = $secondsalt;
 			$username = $kmsirow['username'];
 			if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
 				$ip = $_SERVER['HTTP_CLIENT_IP'];
