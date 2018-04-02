@@ -1,7 +1,8 @@
 <?php
-define('CLIENT_ID', '65774636378-7ls30lc0dnvtp7rukdsplhap2v0i439n.apps.googleusercontent.com');
+require '../inc/variables.php';
+define('CLIENT_ID', $gsuiteid);
 
-define('CLIENT_SECRET', 'hVzaYz9OkcED9KtH_5rKoxsi');
+define('CLIENT_SECRET', $gsuiteauthkey);
 
-define('CLIENT_REDIRECT_URL', 'http://localhost/loginapi/google/index.php');
+define('CLIENT_REDIRECT_URL', ''.$domain.'/google/index.php');
 ?>

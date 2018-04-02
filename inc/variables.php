@@ -13,6 +13,13 @@
 	
 	$firstsalt = '123'; //Enter a random number
 	$secondsalt = '456'; //Enter another random Number
+	
+	
+	//Keys
+	$gsuiteid = '';
+	$gsuiteauthkey = '';
+	$steamauthkey = '';
+	$captchaauthkey = '';
 
 	//MYSQL
 	$mysql_server = 'localhost';

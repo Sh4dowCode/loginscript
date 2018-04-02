@@ -22,7 +22,7 @@
 			return $key;
 	}
 	
-	$secret = "	6LdFc0AUAAAAAA-NS8XCV4X4nEhs0kChf9VjrAgf";
+	$secret = $captchaauthkey;
 
 	$response = null;
 
