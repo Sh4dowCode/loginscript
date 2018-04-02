@@ -55,7 +55,10 @@
 	  }
 		$resetidgen = confirmidgen($verifyidlengh);
 		
-		$sql = "SELECT * FROM `user` WHERE `username` = '".$_POST['username']."' OR `email` = '".$_POST['mail']."'";
+		$safeusrname = mysqli_real_escape_string($con, $_POST['username']);
+		$safemail = mysqli_real_escape_string($con, $$_POST['username']);
+		
+		$sql = "SELECT * FROM `user` WHERE `username` = '".$safeusrname."' OR `email` = '".$safemail."'";
 		$results = mysqli_query($con, $sql);
 
 		if (mysqli_num_rows($results) > 0) {

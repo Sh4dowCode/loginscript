@@ -9,7 +9,8 @@ if ($con->connect_error) {
     die("Connection failed: " . $con->connect_error);
 } 
 if (!isset($_SESSION['id'])) {
-	$logsql = "SELECT * FROM `user` WHERE `username` = '".$_POST['username']."' OR `email` = '".$_POST['username']."'";
+	$safeusrname = mysqli_real_escape_string($con, $_POST['username']);
+	$logsql = "SELECT * FROM `user` WHERE `username` = '".$safeusrname."' OR `email` = '".$safeusrname."'";
 
 	$logrow = mysqli_query($con, $logsql);
 
@@ -40,7 +41,7 @@ if (!isset($_SESSION['id'])) {
 			'cost' => 12,
 		];
 		$value = password_hash($unhashed, PASSWORD_BCRYPT, $options);
-
+		
 		setcookie("kmsi-hash", $value, time()+5184000);
 		
 		$hashsql = "UPDATE `user` SET `hash`='".$value."' WHERE `id` = '".$id."'";

@@ -8,7 +8,7 @@
 		die("Connection failed: " . $con->connect_error);
 	} 
 	
-	$key = $_GET['key'];
+	$key = mysqli_real_escape_string($con, $_GET['key']);
 	
 	$request = 'SELECT * FROM `user` WHERE `resetkey` = "'.$key.'"';
 	

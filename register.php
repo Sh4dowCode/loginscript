@@ -79,8 +79,9 @@ if ($con->connect_error) {
 $options = [
     'cost' => 7,
 ];
-
-$sql = "SELECT * FROM `user` WHERE `username` = '".$_POST['username']."' OR `email` = '".$_POST['mail']."'";
+$safeusrname = mysqli_real_escape_string($con, $_POST['username']);
+$safemail = mysqli_real_escape_string($con, $_POST['mail']);
+$sql = "SELECT * FROM `user` WHERE `username` = '".$safeusrname."' OR `email` = '".$safemail."'";
 		$results = mysqli_query($con, $sql);
 
 		if (mysqli_num_rows($results) > 0) {
@@ -104,7 +105,11 @@ if (isset($_POST['avatarurl'])) {
 	$avatarurl = "./images/avatar.png";
 }
 
-$sql = "INSERT INTO `user` (`id`, `username`, `email`, `name`, `dob`, `password`, `avatar`, `verified`, `verifyid`) VALUES ('".$idadd."', '".$_POST['username']."', '".$_POST['mail']."', '".$_POST['name']."', '".$_POST['dateob']."', '".$passhash."', '".$avatarurl."', '0', '".$verifyidgen."');";
+$safename = mysqli_real_escape_string($con, $_POST['name']);
+$safedob = mysqli_real_escape_string($con, $_POST['dateob']);
+$safeava = mysqli_real_escape_string($con, $avatarurl);
+
+$sql = "INSERT INTO `user` (`id`, `username`, `email`, `name`, `dob`, `password`, `avatar`, `verified`, `verifyid`) VALUES ('".$idadd."', '".$safeusrname."', '".$safemail."', '".$safename."', '".$safedob."', '".$passhash."', '".$safeava."', '0', '".$verifyidgen."');";
 
 mysqli_query($con, $sql);
 

@@ -10,7 +10,7 @@
 		die("Connection failed: " . $con->connect_error);
 	} 
 	
-	$key = $_GET['verify'];
+	$key = mysqli_real_escape_string($con, $_GET['verify']);
 	
 	$request = 'SELECT * FROM `user` WHERE `verifyid` = "'.$key.'"';
 	$requestquery = mysqli_query($con, $request);
