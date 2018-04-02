@@ -48,11 +48,11 @@
 					<p class="logouttxt"><a href="logout.php">Logout</a></p>
 						<header>
 							<span class="avatar"><img src="<?php echo $array1['avatar'];?>" alt="" /></span>
-							<h1>Username: <?php echo $array1['username'];?> <?php if($array1['verified'] == 1) {echo '<i class="fas fa-check" id="verp"></i><div id="verhi" style="display: none"><h5>Verified</h5></div>';}?></h1>
-							<p>ID: <?php echo $_SESSION['id']; ?></p>
-							<p>E-Mail: <?php echo $array1['email'];?></p>
-							<p>Name: <?php echo $array1['name'];?></p>
-							<p>Date of Bith: <?php echo $readabledate;?></p>
+							<h1>Username: <?php echo htmlspecialchars($array1['username'], ENT_QUOTES);?> <?php if($array1['verified'] == 1) {echo '<i class="fas fa-check" id="verp"></i><div id="verhi" style="display: none">Verified</h5></div>';}?></h1>
+							<p>ID: <?php echo htmlspecialchars($_SESSION['id'], ENT_QUOTES); ?></p>
+							<p>E-Mail: <?php echo htmlspecialchars($array1['email'], ENT_QUOTES);?></p>
+							<p>Name: <?php echo htmlspecialchars($array1['name'], ENT_QUOTES);?></p>
+							<p>Date of Bith: <?php echo htmlspecialchars($readabledate, ENT_QUOTES);?></p>
 						</header>
 					</section>
 
